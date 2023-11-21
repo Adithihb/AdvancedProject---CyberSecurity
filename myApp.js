@@ -4,25 +4,6 @@ const app = express();
 
 // your code
 
-module.exports = app;
-app.use(express.static('public'));
-app.disable('strict-transport-security');
-app.use('/_api', require('./server.js'));
-app.get ("/", function (request, response){ 
-  response.sendFile(__dirname + '/views/index.html');
-});
-let PORT = process.env.PORT || 3030;
-app. listen(PORT, ()=>{
-  console.log(`${PORT}`);
-}
-);
-
-
-
-
-
-
-
 
 
 
