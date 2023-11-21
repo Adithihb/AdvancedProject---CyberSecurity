@@ -3,6 +3,8 @@ const helmet = require('helmet');
 const app = express();
 
 // your code
+app.use(helmet.hidePoweredBy());
+
 
 
 
